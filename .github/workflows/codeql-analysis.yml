@@ -50,11 +50,11 @@ jobs:
     - name: Setup Nuget
       uses: nuget/setup-nuget@v1
       
-    - name: Update nuget credentials
-      shell: cmd
-      env:
-        NUGET_PASSWORD: ${{ secrets.NUGETCRED }}
-      run: nuget sources Update -Name PackageTest -Source https://pkgs.dev.azure.com/lucartey/GuardianTest/_packaging/PackageTest/nuget/v3/index.json -Username lucartey -Password "%NUGET_PASSWORD%"
+    #- name: Update nuget credentials
+    #  shell: cmd
+    #  env:
+    #    NUGET_PASSWORD: ${{ secrets.NUGETCRED }}
+    #  run: nuget sources Update -Name PackageTest -Source https://pkgs.dev.azure.com/lucartey/GuardianTest/_packaging/PackageTest/nuget/v3/index.json -Username lucartey -Password "%NUGET_PASSWORD%"
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
