@@ -5,7 +5,7 @@ on:
 
 jobs:
   greetings:
-    runs-on: arc-demo-autoscaling
+    runs-on: arc-demo
 
     steps:
     - name: Checkout repository
